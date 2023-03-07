@@ -1,2 +1,3 @@
 FROM newrelic/synthetics-minion:latest
-COPY package.json /var/lib/newrelic/synthetics/modules
+mkdir -p /var/lib/newrelic/synthetics/modules
+COPY ./package.json /var/lib/newrelic/synthetics/modules
